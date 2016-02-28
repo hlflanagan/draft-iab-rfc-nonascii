@@ -22,7 +22,7 @@
 <?rfc inline="yes"?>
 <?rfc compact="yes"?>
 <?rfc subcompact="no"?>
-<rfc category="info" docName="draft-iab-rfc-nonascii-00" ipr="trust200902">
+<rfc category="info" docName="draft-iab-rfc-nonascii-01" ipr="trust200902" updates="7322">
 <front>
  <title abbrev="non-ASCII in RFCs">The Use of Non-ASCII Characters in RFCs</title>
 
@@ -43,7 +43,7 @@
    </address>
  </author>
 
- <date month="January" year="2016" day="12"/>
+ <date month="February" year="2016" day="29"/>
 
  <area>General</area>
  <workgroup>Internet Architecture Board</workgroup>
@@ -108,7 +108,7 @@ This document updates the <xref target="RFC7322">RFC Style Guide</xref>.
 
 </section>
 
-<section title="Basic requirements">
+<section title="Basic Requirements">
 <t>
 Two fundamental requirements inform the guidance and examples provided
 in this document.  They are:
@@ -127,7 +127,7 @@ information described in the document.</t>
 </t>
 </section>
 
-<section title="Rules for the use of non-ASCII characters">
+<section title="Rules for the Use of Non-ASCII Characters">
 <t>
 This section describes the guidelines for the use of non-ASCII characters 
 in the header, body, and reference sections of an RFC.  If the RFC Editor 
@@ -140,7 +140,7 @@ characters, ask for a set of reviewers to verify the meaning, spelling,
 characters, and grammar of the text.
 </t>
 
-<section title="General usage throughout a document">
+<section title="General Usage Throughout a Document">
 <t>
 Where the use of non-ASCII characters is purely as part of an example
 and not otherwise required for correct protocol operation, escaping 
@@ -177,11 +177,14 @@ Content-Type: application/sdp
 
 <section title="Authors, Contributors, and Acknowledgments">
 <t>
-Person names may appear in several places within an RFC. In all
-cases, valid Unicode is required. For names that include characters
-outside of the Unicode Latin and Latin Extended script, an
-author-provided, ASCII-only identifier is required to assist in search
-and indexing of the document.
+Person names may appear in several places within an RFC. In both the
+front page header and the references section, when a non-Latin script is
+used, the fullname of the author is required. Initials are supported and 
+encouraged if available. In all cases, valid Unicode is required. For 
+names that include characters outside of the Unicode Latin and Latin 
+Extended script, an author-provided, ASCII-only identifier is required to 
+assist in improving general readability as well as the searchability and 
+indexing of the document.
 </t>
 
 <t> Example for the header:</t>
@@ -228,7 +231,7 @@ and indexing of the document.
 </t>
 </section>
 
-<section title="Body of the document">
+<section title="Body of the Document">
 <t>
 When the mention of non-ASCII characters is required for correct
 protocol operation and understanding, the characters' Unicode character
@@ -394,21 +397,28 @@ Original text from "Preparation, Enforcement, and Comparison of Internationalize
       </figure>
 </section>
 
-<section title="Code components">
+<section title="Code Components">
 <t>
 The RFC Editor encourages the use of the U+ notation except within a
 code component where you must follow the rules of the programming
 language in which you are writing the code.
 </t>
+<t>
+Code components are generally expected to use fixed-width fonts. Where
+such fonts are not available for a particular script, the best script-
+appropriate font will be used for that part of the code component.
+</t>
 </section>
 
-<section title="Bibliographic text">
+<section title="Bibliographic Text">
 <t>
 The reference entry must be in English; whatever subfields are present
-must be available in ASCII-encoded characters.  As long as good sense is
-used, the reference entry may also include non-ASCII characters at the
-author's discretion and as provided by the author.  The RFC Editor may
-request a review of the non-ASCII reference entry.
+must be available in ASCII-encoded characters. For references to RFCs
+and Internet Drafts, the author's name will be included in the reference
+as listed on the front header of the RFC or Internet Draft. As long as 
+good sense is used, the reference entry may also include non-ASCII 
+characters at the author's discretion and as provided by the author.  
+The RFC Editor may request a review of any non-ASCII reference entry.
 
 This applies to both normative and informative references.
 </t>
@@ -530,6 +540,10 @@ to preserve expected behavior and protocol information.
 </section>
 
 <section title="Change log - to be removed by the RFC Editor">
+<section title="draft-iab-rfc-nonascii-00 to -01">
+<t>Code Components: added fixed-width font clarification</t>
+<t>Authors, Bibliographic info: Clarified requirements for full name, how name will be displayed</t>
+</section>
 <section title="draft-flanagan-nonascii to draft-iab-rfc-nonascii-00">
 <t>Changed requirement for all nonASCII names (including company names) to require an ASCII equivalent to requiring it only for non-Latin characters. Extended Latin is also acceptable without an ASCII equivalent.</t>
 </section>
