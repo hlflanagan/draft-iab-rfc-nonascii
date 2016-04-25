@@ -42,7 +42,7 @@
    </address>
  </author>
 
- <date month="April" year="2016" day="21"/>
+ <date month="April" year="2016" day="25"/>
 
  <area>General</area>
  <workgroup>Internet Architecture Board</workgroup>
@@ -179,7 +179,7 @@ Content-Type: application/sdp
 <t>
 Person names may appear in several places within an RFC. When a script 
 outside the Unicode Latin blocks is used for a person name, an
-author-provided, ASCII-only identifier is expected immediately after the
+author-provided, ASCII-only identifier will appear immediately after the
 non-Latin characters, surrounded by parentheses. This will improve general
 readability of the text. <xref target="UNICODE-CHART"/>.
 </t>
@@ -223,7 +223,7 @@ and Fred Baker.
    [RFC6630]  Cao, Z., Deng, H., Wu, Q., and G. Zorn, Ed., "EAP
               Re-authentication Protocol Extensions for Authenticated
               Anticipatory Keying (ERP/AAK)", RFC 6630, June 2012.
-<]]></artwork>
+]]></artwork>
 </figure>
 
 <t>NEW</t>
@@ -231,7 +231,7 @@ and Fred Baker.
    [RFC6630]  Cao, Z., Deng, H.,  吴钦 (Wu, Q.), and G. Zorn, Ed., "EAP
               Re-authentication Protocol Extensions for Authenticated
               Anticipatory Keying (ERP/AAK)", RFC 6630, June 2012.
-<]]></artwork>
+]]></artwork>
 </figure>
 </section>
 
